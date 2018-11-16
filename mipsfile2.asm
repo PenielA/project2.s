@@ -15,3 +15,6 @@ removespaceinfront:
    beq $t8, $t7, removefirstcharacter     
    move $t7, $a0                          
    j removespaceafter
+removefirstcharacter:
+   addi $a0, $a0, 1
+   j removespaceinfront
