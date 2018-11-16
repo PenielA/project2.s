@@ -12,3 +12,6 @@ main:
 removespaceinfront:
    li $t8, 32                              
    lb $t7, 0($a0)   
+   beq $t8, $t7, removefirstcharacter     
+   move $t7, $a0                          
+   j removespaceafter
