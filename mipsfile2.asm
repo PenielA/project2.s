@@ -18,3 +18,8 @@ removespaceinfront:
 removefirstcharacter:
    addi $a0, $a0, 1
    j removespaceinfront
+removespaceafter:
+   la $t2, user_Input
+   sub $t2, $t7, $t2 
+   li $t1, 0  
+   li $t8, 0  
