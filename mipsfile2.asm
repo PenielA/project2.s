@@ -77,3 +77,8 @@ check_StringLoop:
    lb $t3, 0($a0)
    move $t8, $a0
    move $a0, $t3
+   move $a0, $t8
+   li $t8, 10              
+   beq $t3, $t8, base_converter
+   slti $t4, $t3, 48        
+   bne $t4, $zero, base_error
