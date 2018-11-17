@@ -118,3 +118,8 @@ convertString:
    beqz $s5, Totalsum		
    beq $s5, $t2, Totalsum    	
    slti $t4, $s5, 58        
+   bne $t4, $zero, zero_to_nine
+   slti $t4, $s5, 86     
+   bne $t4, $zero, A_to_U
+   slti $t4, $s5, 118   
+   bne $t4, $zero, a_to_u
