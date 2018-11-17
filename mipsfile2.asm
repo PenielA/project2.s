@@ -108,3 +108,8 @@ base_converter:
    li $t1, 10
    li $t8, 0  
    add $s7, $s7, $t0
+   addi $s7, $s7, -1  #Set appropriate starting power
+   li $s2, 3
+   li $s3, 2
+   li $s6, 1
+   li $s1, 0
