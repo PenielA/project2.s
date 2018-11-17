@@ -123,3 +123,8 @@ convertString:
    bne $t4, $zero, A_to_U
    slti $t4, $s5, 118   
    bne $t4, $zero, a_to_u
+zero_to_nine:
+   addi $s5, $s5, -48
+   j next_step
+A_to_U:
+   addi $s5, $s5, -55
