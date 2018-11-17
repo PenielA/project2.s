@@ -27,4 +27,9 @@ removespaceafter_loop:
    add $t4, $t2, $t8
    addi $t4, $t4, -100
    beqz $t4, end_removespaceafter        
-   add $t4, $t8, $a0    
+   add $t4, $t8, $a0
+   lb $t4, 0($t4)          
+   beq $t4, $zero, end_removespaceafter  
+   addi $t4, $t4, -10
+   beqz $t4, end_removespaceafter        
+   addi $t4, $t4, -22
