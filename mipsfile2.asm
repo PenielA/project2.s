@@ -87,3 +87,8 @@ check_StringLoop:
    slti $t4, $t3, 65        
    bne $t4, $zero, base_error  
    slti $t4, $t3, 86    
+   bne $t4, $zero, Increment
+   slti $t4, $t3, 97      
+   bne $t4, $zero, base_error 
+   slti $t4, $t3, 121      
+   bne $t4, $zero, Increment
