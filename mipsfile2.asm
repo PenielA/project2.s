@@ -168,3 +168,7 @@ Base_raised_toZero:
 Totalsum:
    li $v0, 1
    move $a0, $t8
+   syscall
+end:
+   li $v0,10      #terminate program run and
+   syscall        #return control system
