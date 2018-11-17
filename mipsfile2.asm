@@ -170,5 +170,5 @@ Totalsum:
    move $a0, $t8
    syscall
 end:
-   li $v0,10      #terminate program run and
-   syscall        #return control system
+   li $v0,10      
+   syscall       
