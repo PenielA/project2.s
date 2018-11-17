@@ -138,3 +138,8 @@ next_step:
    beq $s7, $s1, Base_raised_toZero
 Base_raised_toThree:
    li $s4, 29791
+   mult $s5, $s4
+   mflo $s0
+   add $t8, $t8, $s0
+   addi $s7, $s7, -1
+   addi $a0, $a0, 1
