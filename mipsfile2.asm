@@ -158,3 +158,8 @@ Base_raised_toOne:
    mflo $s0
    add $t8, $t8, $s0
    addi $s7, $s7, -1
+   addi $a0, $a0, 1
+   j convertString
+Base_raised_toZero:
+   li $s4, 1
+   mult $s5, $s4
