@@ -153,3 +153,8 @@ Base_raised_toTwo:
    addi $a0, $a0, 1
    j convertString
 Base_raised_toOne:
+   li $s4, 31
+   mult $s5, $s4
+   mflo $s0
+   add $t8, $t8, $s0
+   addi $s7, $s7, -1
