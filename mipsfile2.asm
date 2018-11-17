@@ -37,3 +37,8 @@ removespaceafter_loop:
 removespaceafter_increment:
    addi $t8, $t8, 1              
    j removespaceafter_loop
+updatelastIndex:
+   move $t1, $t8 
+   j removespaceafter_increment
+end_removespaceafter:
+   add $t4, $zero, $a0 
