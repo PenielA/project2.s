@@ -42,3 +42,10 @@ updatelastIndex:
    j removespaceafter_increment
 end_removespaceafter:
    add $t4, $zero, $a0 
+   add $t4, $t4, $t1 
+   addi $t4, $t4, 1  
+   j checkLength
+checkLength:
+   li $t0, -1
+   add $a0, $t7, $zero
+   
