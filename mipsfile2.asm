@@ -72,3 +72,8 @@ length_error:
    j end
 check_String:
    move $a0, $t7 
+check_StringLoop:
+   li $v0, 11
+   lb $t3, 0($a0)
+   move $t8, $a0
+   move $a0, $t3
