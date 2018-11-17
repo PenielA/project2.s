@@ -103,3 +103,8 @@ base_error:
    la $a0, base_errorMessage
    syscall
    j end
+base_converter:
+   move $a0, $t7  
+   li $t1, 10
+   li $t8, 0  
+   add $s7, $s7, $t0
