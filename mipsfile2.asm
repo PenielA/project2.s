@@ -53,3 +53,8 @@ checkLength_Loop:
    or $t1, $t2, $t0
    beq $t1, $zero, null_error
    beq $t2, $zero, stringDone
+   addi $a0, $a0, 1
+   addi $t0, $t0, 1
+   j checkLength_Loop
+stringDone:
+   slti $t5, $t0, 5
