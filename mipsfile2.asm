@@ -82,3 +82,8 @@ check_StringLoop:
    beq $t3, $t8, base_converter
    slti $t4, $t3, 48        
    bne $t4, $zero, base_error
+   slti $t4, $t3, 58       
+   bne $t4, $zero, Increment
+   slti $t4, $t3, 65        
+   bne $t4, $zero, base_error  
+   slti $t4, $t3, 86    
