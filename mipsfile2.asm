@@ -92,3 +92,9 @@ check_StringLoop:
    bne $t4, $zero, base_error 
    slti $t4, $t3, 121      
    bne $t4, $zero, Increment
+   bgt $t3, 117, base_error 
+   li $t8, 10              
+   beq $t3, $t8, base_converter     
+Increment:
+   addi $a0, $a0, 1
+   j check_StringLoop
