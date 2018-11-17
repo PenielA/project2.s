@@ -128,3 +128,8 @@ zero_to_nine:
    j next_step
 A_to_U:
    addi $s5, $s5, -55
+   j next_step
+a_to_u:
+   addi $s5, $s5, -87
+next_step:
+   beq $s7, $s2, Base_raised_toThree
