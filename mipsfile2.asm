@@ -67,3 +67,8 @@ null_error:
    j end
 length_error:
    li $v0, 4
+   la $a0, length_errorMessage
+   syscall
+   j end
+check_String:
+   move $a0, $t7 
