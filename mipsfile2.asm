@@ -48,4 +48,8 @@ end_removespaceafter:
 checkLength:
    li $t0, -1
    add $a0, $t7, $zero
-   
+checkLength_Loop:
+   lb $t2, 0($a0)
+   or $t1, $t2, $t0
+   beq $t1, $zero, null_error
+   beq $t2, $zero, stringDone
