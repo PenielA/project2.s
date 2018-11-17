@@ -163,3 +163,8 @@ Base_raised_toOne:
 Base_raised_toZero:
    li $s4, 1
    mult $s5, $s4
+   mflo $s7
+   add $t8, $t8, $s7
+Totalsum:
+   li $v0, 1
+   move $a0, $t8
