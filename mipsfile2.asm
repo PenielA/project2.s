@@ -133,3 +133,8 @@ a_to_u:
    addi $s5, $s5, -87
 next_step:
    beq $s7, $s2, Base_raised_toThree
+   beq $s7, $s3, Base_raised_toTwo
+   beq $s7, $s6, Base_raised_toOne
+   beq $s7, $s1, Base_raised_toZero
+Base_raised_toThree:
+   li $s4, 29791
